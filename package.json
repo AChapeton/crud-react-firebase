@@ -8,9 +8,10 @@
     "@testing-library/user-event": "^7.2.1",
     "bootswatch": "^4.5.3",
     "firebase": "^7.24.0",
+    "firebase-tools": "^8.15.1",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
-    "react-scripts": "3.4.3",
+    "react-scripts": "^3.4.3",
     "react-toastify": "^6.0.9"
   },
   "scripts": {

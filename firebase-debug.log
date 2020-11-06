@@ -1,0 +1,40 @@
+[debug] [2020-11-06T02:04:51.080Z] ----------------------------------------------------------------------
+[debug] [2020-11-06T02:04:51.083Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\chape\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-11-06T02:04:51.083Z] CLI Version:   8.13.1
+[debug] [2020-11-06T02:04:51.083Z] Platform:      win32
+[debug] [2020-11-06T02:04:51.084Z] Node Version:  v12.13.0
+[debug] [2020-11-06T02:04:51.085Z] Time:          Thu Nov 05 2020 20:04:51 GMT-0600 (GMT-06:00)
+[debug] [2020-11-06T02:04:51.085Z] ----------------------------------------------------------------------
+[debug] [2020-11-06T02:04:51.085Z] 
+[debug] [2020-11-06T02:04:51.095Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-06T02:04:51.096Z] > authorizing via signed-in user
+[debug] [2020-11-06T02:04:51.096Z] [iam] checking project crudreactfirebase for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-11-06T02:04:51.100Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/crudreactfirebase:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-11-06T02:04:52.667Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 06 Nov 2020 02:04:50 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=299","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-06T02:04:52.670Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project crudreactfirebase:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2020-11-06T02:04:52.672Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/crudreactfirebase  
+ 
+[debug] [2020-11-06T02:04:54.832Z] <<< HTTP RESPONSE 403 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Fri, 06 Nov 2020 02:04:52 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-11-06T02:04:54.832Z] <<< HTTP RESPONSE BODY {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2020-11-06T02:04:54.835Z] HTTP Error: 403, The caller does not have permission
+[debug] [2020-11-06T02:04:55.485Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\chape\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Request._callback (C:\Users\chape\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:41:35)
+    at Request.self.callback (C:\Users\chape\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:210:5)
+    at Request.EventEmitter.emit (domain.js:476:20)
+    at Request.<anonymous> (C:\Users\chape\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1154:10)
+    at Request.emit (events.js:210:5)
+    at Request.EventEmitter.emit (domain.js:476:20)
+    at IncomingMessage.<anonymous> (C:\Users\chape\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1076:12)
+    at Object.onceWrapper (events.js:299:28)
+    at IncomingMessage.emit (events.js:215:7)
+    at IncomingMessage.EventEmitter.emit (domain.js:476:20)
+    at endReadableNT (_stream_readable.js:1183:12)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
+[error] 
+[error] Error: Failed to get Firebase project crudreactfirebase. Please make sure the project exists and your account has permission to access it.
